@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdjtt8bi60slt"]
+
+[ext_resource type="Texture2D" uid="uid://cfly6a6pvto8m" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter_Black_Shadow/22_Museum_Black_Shadow_16x16.png" id="1_u83ih"]
+[ext_resource type="Script" uid="uid://sr5srsapfwww" path="res://Objects/sloup.gd" id="2_p3he1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3he1"]
+size = Vector2(16, 18)
+
+[node name="Sloup" type="Sprite2D"]
+texture = ExtResource("1_u83ih")
+region_enabled = true
+region_rect = Rect2(96, 464, 16, 64)
+script = ExtResource("2_p3he1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 23)
+shape = SubResource("RectangleShape2D_p3he1")
