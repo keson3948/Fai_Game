@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://nexqanv3lpor"]
+
+[ext_resource type="Script" uid="uid://k75e1xvgwvkf" path="res://Levels/main_menu.gd" id="1_3es34"]
+[ext_resource type="Texture2D" uid="uid://prhbnajwt4kq" path="res://Art/image.png" id="1_6ucrw"]
+[ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="2_jy27m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3es34"]
+bg_color = Color(0.921569, 0.882353, 0.964706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.207843, 0.207843, 0.337255, 1)
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_3es34")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 490.0
+offset_bottom = 300.0
+texture = ExtResource("1_6ucrw")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+offset_left = 139.0
+offset_top = 180.0
+offset_right = 339.0
+offset_bottom = 280.0
+
+[node name="StartButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.25098, 0.25098, 0.392157, 1)
+theme_override_fonts/font = ExtResource("2_jy27m")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_3es34")
+text = "START"
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.25098, 0.25098, 0.392157, 1)
+theme_override_fonts/font = ExtResource("2_jy27m")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_3es34")
+text = "KONEC"
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/StartButton" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

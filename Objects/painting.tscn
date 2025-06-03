@@ -1,0 +1,66 @@
+[gd_scene load_steps=7 format=3 uid="uid://dt0rac6y08qp"]
+
+[ext_resource type="Script" uid="uid://b3tmx2i12trm3" path="res://Objects/painting.gd" id="1_itb87"]
+[ext_resource type="Texture2D" uid="uid://c47u8hl7cgaxb" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/Keyboard Letters and Symbols.png" id="3_qkqkm"]
+[ext_resource type="Texture2D" uid="uid://ugbmvbxfowo6" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/ no.png" id="4_qkqkm"]
+[ext_resource type="Script" uid="uid://jq4cajx2eqyc" path="res://Objects/image_viewer_ui.gd" id="4_vmqou"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_41y0t"]
+radius = 28.0179
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_itb87"]
+bg_color = Color(0.921569, 0.882353, 0.964706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.207843, 0.207843, 0.337255, 1)
+
+[node name="Painting" type="Node2D"]
+script = ExtResource("1_itb87")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+region_rect = Rect2(208, 48, 32, 32)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_41y0t")
+
+[node name="EKeyHint" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(0, -18)
+texture = ExtResource("3_qkqkm")
+region_enabled = true
+region_rect = Rect2(64, 32, 16, 16)
+
+[node name="ImageViewerUI" type="CanvasLayer" parent="."]
+script = ExtResource("4_vmqou")
+
+[node name="Panel" type="Panel" parent="ImageViewerUI"]
+offset_left = 93.0
+offset_top = 32.0
+offset_right = 393.0
+offset_bottom = 242.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_itb87")
+
+[node name="CancelButton" type="Button" parent="ImageViewerUI/Panel"]
+offset_left = 281.0
+offset_top = 4.0
+offset_right = 296.0
+offset_bottom = 19.0
+theme_override_icons/icon = ExtResource("4_qkqkm")
+icon_alignment = 1
+expand_icon = true
+
+[node name="ImageDisplay" type="TextureRect" parent="ImageViewerUI/Panel"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 24.0
+offset_right = 291.0
+offset_bottom = 204.0
+expand_mode = 3
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]
+[connection signal="pressed" from="ImageViewerUI/Panel/CancelButton" to="ImageViewerUI" method="_on_cancel_button_pressed"]

@@ -1,0 +1,90 @@
+[gd_scene load_steps=17 format=3 uid="uid://30vhht8ocksj"]
+
+[ext_resource type="PackedScene" uid="uid://bbsf3afdfqybj" path="res://Characters/stana_player.tscn" id="1_yqt1g"]
+[ext_resource type="PackedScene" uid="uid://bmchwo100wa2b" path="res://Characters/npc.tscn" id="2_hi8bu"]
+[ext_resource type="Texture2D" uid="uid://1lq0oodsr6xh" path="res://Art/Characters/postavy/danca.png" id="3_u1ke5"]
+[ext_resource type="Texture2D" uid="uid://b1jx0qu2bgcri" path="res://Art/Characters/postavy/david.png" id="4_ayvpv"]
+[ext_resource type="PackedScene" uid="uid://d2rurpuwlcty0" path="res://Dialog/dialog_ui.tscn" id="4_jse5j"]
+[ext_resource type="PackedScene" uid="uid://du6gfciwwr13e" path="res://Characters/DialogCharacter.tscn" id="5_0axg4"]
+[ext_resource type="PackedScene" uid="uid://bsfuh5da10d73" path="res://Objects/door.tscn" id="6_0axg4"]
+[ext_resource type="PackedScene" uid="uid://cjfrtjxse0ymc" path="res://Objects/Book.tscn" id="7_3lbad"]
+[ext_resource type="PackedScene" uid="uid://dt0rac6y08qp" path="res://Objects/painting.tscn" id="8_5u4n5"]
+[ext_resource type="Texture2D" uid="uid://by4j87hyjxfcg" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/22_Museum.png" id="9_843im"]
+[ext_resource type="Texture2D" uid="uid://dmtnxsfaymqqh" path="res://Art/obraz.png" id="10_843im"]
+[ext_resource type="PackedScene" uid="uid://uxsya2r13lyx" path="res://Objects/quest_ui.tscn" id="11_843im"]
+[ext_resource type="PackedScene" uid="uid://b8s01h0ud2t4t" path="res://Objects/PickupItem.tscn" id="12_tnmcu"]
+[ext_resource type="Texture2D" uid="uid://c8p4cw8gavf6w" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/5_Classroom_and_library_16x16.png" id="13_u1ke5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mg7ta"]
+atlas = ExtResource("9_843im")
+region = Rect2(112, 400, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayvpv"]
+atlas = ExtResource("13_u1ke5")
+region = Rect2(144, 0, 16, 32)
+
+[node name="GameLevelTwo" type="Node2D"]
+y_sort_enabled = true
+
+[node name="StanaPlayer" parent="." instance=ExtResource("1_yqt1g")]
+z_index = 1
+y_sort_enabled = true
+position = Vector2(80, -90)
+scale = Vector2(0.5, 0.5)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="StanaPlayer"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(80, -90)
+scale = Vector2(0.5, 0.5)
+position_smoothing_enabled = true
+
+[node name="NPC" parent="." instance=ExtResource("2_hi8bu")]
+position = Vector2(117, -102)
+scale = Vector2(0.5, 0.5)
+
+[node name="NPC2" parent="." instance=ExtResource("2_hi8bu")]
+position = Vector2(12, -127)
+scale = Vector2(0.5, 0.5)
+npc_texture = ExtResource("3_u1ke5")
+
+[node name="NPC3" parent="." instance=ExtResource("2_hi8bu")]
+position = Vector2(90, -182)
+scale = Vector2(0.5, 0.5)
+npc_texture = ExtResource("4_ayvpv")
+
+[node name="DialogUI" parent="." instance=ExtResource("4_jse5j")]
+
+[node name="KovarNPC" parent="." instance=ExtResource("5_0axg4")]
+y_sort_enabled = true
+position = Vector2(225, -37)
+scale = Vector2(0.5, 0.5)
+dialog_stages = [["Zdravím, studente.", "Dnes je státnice, že?", "Nezapomeň si přinést tužku!"], ["Už jsi zpátky? Našel jsi, co jsem chtěl?", "Aha! Zapomněl jsem si říct PIN!", "Jen, nemůžu si teď vzpomenout...", "PIN je rok založení fakulty.", "Podívej se po fakultě a najdi obraz s rokem založením."], ["Díky! Tak ať ti to dnes dobře dopadne."]]
+chapter_transition_stages = {
+"2": {
+"next_scene": "res://Levels/game_level_three.tscn",
+"subtitle": "blabla",
+"title": "Kapitola II"
+}
+}
+
+[node name="Door" parent="." instance=ExtResource("6_0axg4")]
+position = Vector2(-16, 0)
+locked = true
+quest_text_when_locked = "Zeptej se pana Kováře na PIN."
+quest_text_after_unlock = "Vem Diplomku"
+
+[node name="Book" parent="." instance=ExtResource("7_3lbad")]
+position = Vector2(-108, 0)
+
+[node name="Painting" parent="." instance=ExtResource("8_5u4n5")]
+position = Vector2(225, -116)
+preview_texture = SubResource("AtlasTexture_mg7ta")
+full_image_texture = ExtResource("10_843im")
+
+[node name="QuestUI" parent="." instance=ExtResource("11_843im")]
+
+[node name="PickupItem" parent="." instance=ExtResource("12_tnmcu")]
+position = Vector2(-106, 126)
+preview_texture = SubResource("AtlasTexture_ayvpv")

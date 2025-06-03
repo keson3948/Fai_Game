@@ -1,0 +1,92 @@
+[gd_scene load_steps=9 format=3 uid="uid://cjfrtjxse0ymc"]
+
+[ext_resource type="Script" uid="uid://lrtjfvvbha6d" path="res://Objects/book.gd" id="1_pay1v"]
+[ext_resource type="Texture2D" uid="uid://c8p4cw8gavf6w" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/5_Classroom_and_library_16x16.png" id="2_3b384"]
+[ext_resource type="Texture2D" uid="uid://c47u8hl7cgaxb" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/Keyboard Letters and Symbols.png" id="3_0bnlj"]
+[ext_resource type="Script" uid="uid://clsjhqxwngw31" path="res://Objects/book_ui.gd" id="4_0bnlj"]
+[ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="5_whrt6"]
+[ext_resource type="Texture2D" uid="uid://ugbmvbxfowo6" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/ no.png" id="6_whrt6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_whrt6"]
+radius = 28.8617
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xd7gw"]
+bg_color = Color(0.921569, 0.882353, 0.964706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.207843, 0.207843, 0.337255, 1)
+border_blend = true
+
+[node name="Book" type="Node2D"]
+script = ExtResource("1_pay1v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_3b384")
+region_enabled = true
+region_rect = Rect2(144, 0, 16, 32)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-1, 2)
+rotation = 0.262244
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_whrt6")
+
+[node name="EKeyHint" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1, -16)
+texture = ExtResource("3_0bnlj")
+region_enabled = true
+region_rect = Rect2(64, 32, 16, 16)
+
+[node name="BookUI" type="CanvasLayer" parent="."]
+script = ExtResource("4_0bnlj")
+
+[node name="Panel" type="Panel" parent="BookUI"]
+offset_left = 85.0
+offset_top = 39.0
+offset_right = 385.0
+offset_bottom = 239.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xd7gw")
+
+[node name="LabelTitle" type="Label" parent="BookUI/Panel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(0.329412, 0.321569, 0.447059, 1)
+theme_override_fonts/font = ExtResource("5_whrt6")
+theme_override_font_sizes/font_size = 15
+text = "Kniha"
+
+[node name="LabelBody" type="RichTextLabel" parent="BookUI/Panel"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 46.0
+offset_right = 295.0
+offset_bottom = 186.0
+theme_override_colors/default_color = Color(0.27451, 0.27451, 0.396078, 1)
+theme_override_fonts/normal_font = ExtResource("5_whrt6")
+theme_override_font_sizes/bold_italics_font_size = 3
+theme_override_font_sizes/italics_font_size = 4
+theme_override_font_sizes/mono_font_size = 3
+theme_override_font_sizes/normal_font_size = 10
+theme_override_font_sizes/bold_font_size = 0
+text = "rdfgdfg ad ad asd sad sad jnasd njasd njasjd nasjdn asjnd jasnd jasdn jasnd jasd jasnd jsand jasnd jasnd jrdfgdfg ad ad asd sad sad jnasd njasd njasjd nasjdn asjnd jasnd jasdn jasnd jasd jasnd jsand jasnd jasnd jrdfgdfg ad ad asd sad sad jnasd njasd njasjd nasjdn asjnd jasnd jasdn jasnd jasd jasnd jsand jasnd jasnd j"
+
+[node name="CancelButton" type="Button" parent="BookUI/Panel"]
+offset_left = 264.0
+offset_top = 6.0
+offset_right = 294.0
+offset_bottom = 36.0
+theme_override_icons/icon = ExtResource("6_whrt6")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]
+[connection signal="pressed" from="BookUI/Panel/CancelButton" to="BookUI" method="_on_close_pressed"]
