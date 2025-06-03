@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://uxsya2r13lyx"]
+
+[ext_resource type="FontFile" uid="uid://wdnv6a7daj0s" path="res://Art/Pixelify_Sans/static/PixelifySans-Regular.ttf" id="1_2abgi"]
+[ext_resource type="Script" uid="uid://bhp4d5fjcqlyt" path="res://Objects/quest_ui.gd" id="1_87yd1"]
+[ext_resource type="Texture2D" uid="uid://bg3b62pcpcwcx" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/UI_thinking_emotes_animation_16x16.png" id="2_87yd1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qrd3"]
+bg_color = Color(1, 1, 1, 0.407843)
+corner_radius_top_left = 5
+corner_radius_bottom_right = 5
+
+[node name="QuestUI" type="CanvasLayer"]
+script = ExtResource("1_87yd1")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 255.0
+offset_bottom = 26.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2qrd3")
+
+[node name="QuestLabel" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 5.0
+offset_right = 60.0
+offset_bottom = 28.0
+theme_override_fonts/font = ExtResource("1_2abgi")
+theme_override_font_sizes/font_size = 9
+text = "Textsdf sdf sdf dsf sdf sfd  sdf sf sd ds ds fdsf ds"
+
+[node name="UiThinkingEmotesAnimation16x16" type="Sprite2D" parent="Panel"]
+position = Vector2(11, 10)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_87yd1")
+region_enabled = true
+region_rect = Rect2(0, 64, 16, 16)

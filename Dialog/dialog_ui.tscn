@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://d2rurpuwlcty0"]
+
+[ext_resource type="Script" uid="uid://dtnctgpxostxe" path="res://Dialog/dialog_ui.gd" id="1_i5ysq"]
+[ext_resource type="Texture2D" uid="uid://bv7ek8g1lpqbv" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/UI_16x16.png" id="2_xgl01"]
+[ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="3_hpssw"]
+[ext_resource type="Texture2D" uid="uid://begt7dcvcs65v" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/Keyboard Extras.png" id="3_jwogu"]
+[ext_resource type="FontFile" uid="uid://ccw6lj352kd7l" path="res://Art/Pixelify_Sans/static/PixelifySans-Bold.ttf" id="5_jwogu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5ysq"]
+bg_color = Color(0.921569, 0.882353, 0.964706, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.25098, 0.25098, 0.392157, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mwqny"]
+font = ExtResource("3_hpssw")
+font_size = 11
+font_color = Color(0.25098, 0.25098, 0.392157, 1)
+
+[node name="DialogUI" type="CanvasLayer"]
+script = ExtResource("1_i5ysq")
+
+[node name="DialogBox" type="Panel" parent="."]
+offset_left = 20.0
+offset_top = 216.0
+offset_right = 470.0
+offset_bottom = 256.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_i5ysq")
+
+[node name="Ui16x16" type="Sprite2D" parent="DialogBox"]
+position = Vector2(14, 19)
+texture = ExtResource("2_xgl01")
+region_enabled = true
+region_rect = Rect2(112, 192, 16, 32)
+
+[node name="KeyboardExtras" type="Sprite2D" parent="DialogBox"]
+position = Vector2(422, 21)
+texture = ExtResource("3_jwogu")
+region_enabled = true
+region_rect = Rect2(96, 16, 32, 16)
+
+[node name="NameLabel" type="Label" parent="DialogBox"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 7.0
+offset_right = 103.0
+offset_bottom = 107.0
+scale = Vector2(0.5, 0.5)
+text = "Pan kovář"
+label_settings = SubResource("LabelSettings_mwqny")
+
+[node name="TextLabel" type="RichTextLabel" parent="DialogBox"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 15.0
+offset_right = 394.0
+offset_bottom = 35.0
+theme_override_colors/default_color = Color(0.25098, 0.25098, 0.392157, 1)
+theme_override_fonts/normal_font = ExtResource("5_jwogu")
+theme_override_font_sizes/normal_font_size = 10
+text = "Text
+"
