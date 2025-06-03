@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://de8s0cscutbg4"]
+
+[ext_resource type="Texture2D" uid="uid://c8p4cw8gavf6w" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/5_Classroom_and_library_16x16.png" id="1_un2ft"]
+[ext_resource type="Script" uid="uid://sr5srsapfwww" path="res://Objects/sloup.gd" id="2_2nahg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3he1"]
+size = Vector2(16, 10)
+
+[node name="Stul" type="Sprite2D"]
+texture = ExtResource("1_un2ft")
+region_enabled = true
+region_rect = Rect2(32.0288, 20.0212, 16.4571, 20.7737)
+script = ExtResource("2_2nahg")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_p3he1")
