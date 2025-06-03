@@ -43,11 +43,11 @@ func _process(_delta):
 			if not quest_given and quest_text_when_locked.strip_edges() != "":
 				quest_given = true
 				await get_tree().process_frame
-				var quest_ui = get_node_or_null("/root/GameLevelTwo/QuestUI")
+				var quest_ui = get_node_or_null("/root/GameLevel/QuestUI")
 				if quest_ui:
 					quest_ui.set_quest(quest_text_when_locked)
 
-				var kovar = get_node_or_null("/root/GameLevelTwo/KovarNPC")
+				var kovar = get_node_or_null("/root/GameLevel/KovarNPC")
 				if kovar:
 					kovar.set_stage(1)
 		else:

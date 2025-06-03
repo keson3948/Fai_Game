@@ -13,7 +13,7 @@ func _on_start_pressed():
 	# Nastavení parametrů pro kapitolu
 	chapter_screen.chapter_title = "Kapitola I."
 	chapter_screen.chapter_subtitle = "První den na fakultě. Dveře jsou zavřené – ale odpovědi visí na zdech.."
-	chapter_screen.next_scene_path = "res://Levels/game_level_two.tscn"
+	chapter_screen.next_scene_path = "res://Levels/game_level.tscn"
 
 	# Vyčištění obrazovky a přidání kapitoly
 	get_tree().root.add_child(chapter_screen)

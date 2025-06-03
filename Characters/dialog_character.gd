@@ -54,19 +54,13 @@ func start_dialog():
 		if dialog_stage < quest_text_stages.size() and not quest_given_stages[dialog_stage]:
 			var quest_text = quest_text_stages[dialog_stage]
 			if quest_text.strip_edges() != "":
-				var quest_ui = get_tree().root.get_node_or_null("GameLevelTwo/QuestUI")
+				var quest_ui = get_tree().root.get_node_or_null("GameLevel/QuestUI")
 				if quest_ui:
 					quest_ui.set_quest(quest_text)
 					quest_given_stages[dialog_stage] = true
 
 		# 🧩 Přejít na další kapitolu¨
 		var key := str(dialog_stage)
-		print("--- DEBUG ---")
-		print("Dialog stage: ", dialog_stage)
-		print("Key to check: ", key)
-		print("Keys in chapter_transition_stages: ", chapter_transition_stages.keys())
-		print("Full dictionary: ", chapter_transition_stages)
-		print("--- END DEBUG ---")
 		if chapter_transition_stages.has(key):
 			var data = chapter_transition_stages[key]
 			

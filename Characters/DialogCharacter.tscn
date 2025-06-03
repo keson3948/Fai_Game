@@ -1,7 +1,7 @@
 [gd_scene load_steps=39 format=3 uid="uid://du6gfciwwr13e"]
 
 [ext_resource type="Script" uid="uid://dpyftbysc1uh0" path="res://Characters/dialog_character.gd" id="1_v0p8v"]
-[ext_resource type="Texture2D" uid="uid://dylmeu12bv4ta" path="res://Art/Sprout Lands - Sprites - Basic pack/Characters/Download43965.png" id="2_hiwuc"]
+[ext_resource type="Texture2D" uid="uid://7uxp63cwq8xx" path="res://Art/Characters/kovar3.png" id="2_c0keg"]
 [ext_resource type="Texture2D" uid="uid://cq21kf7853205" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/ezgif-split/ezgif-split/frame_0_delay-0.1s.png" id="3_xqihw"]
 [ext_resource type="Texture2D" uid="uid://didgar8en0b5g" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/ezgif-split/ezgif-split/frame_1_delay-0.1s.png" id="4_c0keg"]
 [ext_resource type="Texture2D" uid="uid://c1ytvuidkrk2t" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/ezgif-split/ezgif-split/frame_2_delay-0.1s.png" id="5_oko1o"]
@@ -32,7 +32,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [26, 313]
+"values": [26, 27]
 }
 
 [sub_resource type="Animation" id="Animation_fecwx"]
@@ -49,7 +49,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [299, 300]
+"values": [13, 14]
 }
 
 [sub_resource type="Animation" id="Animation_hob87"]
@@ -66,7 +66,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [325, 326]
+"values": [39, 40]
 }
 
 [sub_resource type="Animation" id="Animation_i2d00"]
@@ -83,7 +83,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.2),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [286, 287]
+"values": [0, 1]
 }
 
 [sub_resource type="Animation" id="Animation_s6dl7"]
@@ -274,10 +274,10 @@ radius = 62.0081
 script = ExtResource("1_v0p8v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_hiwuc")
+texture = ExtResource("2_c0keg")
 hframes = 13
 vframes = 54
-frame = 313
+frame = 27
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 23)

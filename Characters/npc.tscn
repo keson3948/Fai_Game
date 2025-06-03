@@ -234,7 +234,6 @@ npc_texture = ExtResource("2_32lk6")
 texture = ExtResource("2_32lk6")
 hframes = 13
 vframes = 54
-frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 23)

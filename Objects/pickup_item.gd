@@ -21,12 +21,12 @@ func _on_body_entered(body):
 		print(pickup_text)
 
 		if not quest_given and quest_text_after_pickup.strip_edges() != "":
-			var quest_ui = get_node_or_null("/root/GameLevelTwo/QuestUI")
+			var quest_ui = get_node_or_null("/root/GameLevel/QuestUI")
 			if quest_ui:
 				quest_ui.set_quest(quest_text_after_pickup)
 				quest_given = true
 
-			var kovar = get_node_or_null("/root/GameLevelTwo/KovarNPC")
+			var kovar = get_node_or_null("/root/GameLevel/KovarNPC")
 			if kovar:
 				kovar.set_stage(2)  # např. přepnutí fáze na předání
 

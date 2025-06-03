@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FAI"
-run/main_scene="uid://cnmsv2mbtk6ni"
+run/main_scene="uid://nexqanv3lpor"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 

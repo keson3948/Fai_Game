@@ -1,37 +1,37 @@
-[gd_scene load_steps=19 format=3 uid="uid://bsfuh5da10d73"]
+[gd_scene load_steps=19 format=3 uid="uid://de2snhos2ihbx"]
 
-[ext_resource type="Script" uid="uid://dt2g63dq6h6ah" path="res://Objects/door.gd" id="1_b6hdd"]
-[ext_resource type="Texture2D" uid="uid://bv26n0rvexx52" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_4_delay-0.5s.png" id="1_onmhv"]
-[ext_resource type="Texture2D" uid="uid://b0fjfl02yroq" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_5_delay-0.1s.png" id="2_b6hdd"]
-[ext_resource type="Texture2D" uid="uid://c47u8hl7cgaxb" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/Keyboard Letters and Symbols.png" id="2_igb2v"]
-[ext_resource type="Texture2D" uid="uid://b7n6lnhv3cw7i" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_6_delay-0.1s.png" id="3_igb2v"]
-[ext_resource type="Texture2D" uid="uid://80g5ovt53h7r" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_7_delay-0.1s.png" id="4_j22j0"]
-[ext_resource type="Texture2D" uid="uid://c3ueg8uv28tfx" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_0_delay-0.5s.png" id="5_6biog"]
-[ext_resource type="Texture2D" uid="uid://b0qoy0d8qqgrw" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_1_delay-0.1s.png" id="6_q3v1m"]
-[ext_resource type="Texture2D" uid="uid://bstgejq7ba5hj" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_2_delay-0.1s.png" id="7_08m7o"]
-[ext_resource type="Texture2D" uid="uid://effvs5vj3ur" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_3_delay-0.1s.png" id="8_tqh08"]
-[ext_resource type="Script" uid="uid://bum3fwagerl3q" path="res://Objects/code_input_ui.gd" id="11_j22j0"]
-[ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="12_sqfwt"]
-[ext_resource type="Texture2D" uid="uid://ckhfm318fa7u4" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/yes.png" id="13_bfhjj"]
-[ext_resource type="Texture2D" uid="uid://ugbmvbxfowo6" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/ no.png" id="14_b1d4q"]
+[ext_resource type="Script" uid="uid://dt2g63dq6h6ah" path="res://Objects/door.gd" id="1_el3cg"]
+[ext_resource type="Texture2D" uid="uid://c3ueg8uv28tfx" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_0_delay-0.5s.png" id="2_hhedg"]
+[ext_resource type="Texture2D" uid="uid://80g5ovt53h7r" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_7_delay-0.1s.png" id="3_rc8ct"]
+[ext_resource type="Texture2D" uid="uid://b7n6lnhv3cw7i" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_6_delay-0.1s.png" id="4_8cixk"]
+[ext_resource type="Texture2D" uid="uid://b0fjfl02yroq" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_5_delay-0.1s.png" id="5_bhj1t"]
+[ext_resource type="Texture2D" uid="uid://bv26n0rvexx52" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_4_delay-0.5s.png" id="6_ui20d"]
+[ext_resource type="Texture2D" uid="uid://effvs5vj3ur" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_3_delay-0.1s.png" id="7_6ibqr"]
+[ext_resource type="Texture2D" uid="uid://bstgejq7ba5hj" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_2_delay-0.1s.png" id="8_uy6ei"]
+[ext_resource type="Texture2D" uid="uid://b0qoy0d8qqgrw" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_1_delay-0.1s.png" id="9_qa08i"]
+[ext_resource type="Texture2D" uid="uid://c47u8hl7cgaxb" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/Keyboard Letters and Symbols.png" id="10_bhjdv"]
+[ext_resource type="Script" uid="uid://bum3fwagerl3q" path="res://Objects/code_input_ui.gd" id="11_nck0w"]
+[ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="12_e0xgy"]
+[ext_resource type="Texture2D" uid="uid://ckhfm318fa7u4" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/yes.png" id="13_tes08"]
+[ext_resource type="Texture2D" uid="uid://ugbmvbxfowo6" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/ no.png" id="14_7vqto"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sqfwt"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_6biog")
+"texture": ExtResource("6_ui20d")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_j22j0")
+"texture": ExtResource("5_bhj1t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_igb2v")
+"texture": ExtResource("4_8cixk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_b6hdd")
+"texture": ExtResource("3_rc8ct")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_onmhv")
+"texture": ExtResource("2_hhedg")
 }],
 "loop": false,
 "name": &"close",
@@ -39,19 +39,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_onmhv")
+"texture": ExtResource("2_hhedg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_tqh08")
+"texture": ExtResource("9_qa08i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_08m7o")
+"texture": ExtResource("8_uy6ei")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_q3v1m")
+"texture": ExtResource("7_6ibqr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_6biog")
+"texture": ExtResource("6_ui20d")
 }],
 "loop": false,
 "name": &"open",
@@ -59,7 +59,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bfhjj"]
-size = Vector2(17, 28)
+size = Vector2(3, 41)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_igb2v"]
 
@@ -72,7 +72,7 @@ border_width_bottom = 2
 border_color = Color(0.207843, 0.207843, 0.337255, 1)
 
 [node name="Door" type="Node2D"]
-script = ExtResource("1_b6hdd")
+script = ExtResource("1_el3cg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_sqfwt")
@@ -82,7 +82,7 @@ speed_scale = 2.0
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(2.5, -3)
+position = Vector2(-4.5, 3.5)
 shape = SubResource("RectangleShape2D_bfhjj")
 
 [node name="PlayerDetector" type="Area2D" parent="."]
@@ -95,13 +95,13 @@ shape = SubResource("CircleShape2D_igb2v")
 
 [node name="EKeyHint" type="Sprite2D" parent="."]
 visible = false
-position = Vector2(2, -30)
-texture = ExtResource("2_igb2v")
+position = Vector2(-4, -28)
+texture = ExtResource("10_bhjdv")
 region_enabled = true
 region_rect = Rect2(64, 32, 16, 16)
 
 [node name="CodeInputUI" type="CanvasLayer" parent="."]
-script = ExtResource("11_j22j0")
+script = ExtResource("11_nck0w")
 
 [node name="CodePanel" type="Panel" parent="CodeInputUI"]
 offset_left = 164.0
@@ -116,7 +116,7 @@ offset_left = 25.0
 offset_top = 5.0
 offset_right = 125.0
 offset_bottom = 36.0
-theme_override_fonts/font = ExtResource("12_sqfwt")
+theme_override_fonts/font = ExtResource("12_e0xgy")
 theme_override_font_sizes/font_size = 18
 placeholder_text = "****"
 
@@ -126,7 +126,7 @@ offset_left = 26.0
 offset_top = 41.0
 offset_right = 56.0
 offset_bottom = 71.0
-theme_override_icons/icon = ExtResource("13_bfhjj")
+theme_override_icons/icon = ExtResource("13_tes08")
 icon_alignment = 1
 expand_icon = true
 
@@ -136,7 +136,7 @@ offset_left = 94.0
 offset_top = 41.0
 offset_right = 124.0
 offset_bottom = 71.0
-theme_override_icons/icon = ExtResource("14_b1d4q")
+theme_override_icons/icon = ExtResource("14_7vqto")
 icon_alignment = 1
 expand_icon = true
 

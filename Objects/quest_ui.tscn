@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bg3b62pcpcwcx" path="res://Art/moderninteriors-win-2/4_User_Interface_Elements/UI_thinking_emotes_animation_16x16.png" id="2_87yd1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qrd3"]
-bg_color = Color(1, 1, 1, 0.407843)
+bg_color = Color(0.866667, 0.345098, 0.117647, 0.956863)
 corner_radius_top_left = 5
 corner_radius_bottom_right = 5
 
