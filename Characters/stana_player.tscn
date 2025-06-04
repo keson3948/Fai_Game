@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://bbsf3afdfqybj"]
+[gd_scene load_steps=29 format=3 uid="uid://bbsf3afdfqybj"]
 
 [ext_resource type="Script" uid="uid://b5hqyydsmp3il" path="res://Characters/stana_player.gd" id="1_1pkk5"]
 [ext_resource type="Texture2D" uid="uid://dylmeu12bv4ta" path="res://Art/Sprout Lands - Sprites - Basic pack/Characters/Download43965.png" id="1_jxxvy"]
+[ext_resource type="AudioStream" uid="uid://bcqro2ah21ud3" path="res://Music/walking.mp3" id="3_30um3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jxxvy"]
 size = Vector2(28, 14)
@@ -233,7 +234,7 @@ script = ExtResource("1_1pkk5")
 texture = ExtResource("1_jxxvy")
 hframes = 13
 vframes = 54
-frame = 26
+frame = 313
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 23)
@@ -249,3 +250,7 @@ tree_root = SubResource("AnimationNodeStateMachine_3i3e3")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(0.0250627, 0.216071)
 parameters/Walk/blend_position = Vector2(0, 0)
+
+[node name="FootstepSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_30um3")
+volume_db = 24.0

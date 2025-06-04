@@ -4,6 +4,7 @@ extends Area2D
 @export var amount: int = 1
 @export var pickup_text: String = "Sebráno: diplomka"
 @export var preview_texture: AtlasTexture
+@onready var pickup_sound = $PickupSound
 
 @export var quest_text_after_pickup: String = "Zanes diplomku panu Kovářovi."
 
@@ -18,7 +19,7 @@ func _ready():
 func _on_body_entered(body):
 	if body.name == "StanaPlayer":
 		body.add_item(item_id, amount)
-		print(pickup_text)
+		pickup_sound.play()
 
 		if not quest_given and quest_text_after_pickup.strip_edges() != "":
 			var quest_ui = get_node_or_null("/root/GameLevel/QuestUI")

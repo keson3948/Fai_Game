@@ -60,7 +60,7 @@ npc_texture = ExtResource("4_ayvpv")
 y_sort_enabled = true
 position = Vector2(225, -37)
 scale = Vector2(0.5, 0.5)
-dialog_stages = [["Zdravím, studente.", "Dnes je státnice, že?", "Nezapomeň si přinést tužku!"], ["Už jsi zpátky? Našel jsi, co jsem chtěl?", "Aha! Zapomněl jsem si říct PIN!", "Jen, nemůžu si teď vzpomenout...", "PIN je rok založení fakulty.", "Podívej se po fakultě a najdi obraz s rokem založením."], ["Díky! Tak ať ti to dnes dobře dopadne."]]
+dialog_stages = [["Zdravím tě, kolego! Mám tu menší prosbu.", "Potřebuju si vyzvednout jeden spis z mé kanceláře.", "Je to složka k diplomové práci z roku 1998… Víš, takové ty staré časy", "Sám si pro ni dojdu, říkáš?", "Ehm, no… mám tu zrovna telekonferenci. Pomohl bys mi?"], ["Už jsi zpátky? Našel jsi, co jsem chtěl?", "Aha! Zapomněl jsem si říct PIN!", "Jen, nemůžu si teď vzpomenout...", "PIN je rok založení fakulty.", "Podívej se po fakultě a najdi obraz s rokem založením."], ["Díky! Tak ať ti to dnes dobře dopadne."]]
 chapter_transition_stages = {
 "2": {
 "next_scene": "res://Levels/game_level_three.tscn",

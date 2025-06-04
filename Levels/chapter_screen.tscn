@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c2chn5dnpcmve"]
+[gd_scene load_steps=5 format=3 uid="uid://c2chn5dnpcmve"]
 
 [ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="1_ru76d"]
 [ext_resource type="Script" uid="uid://ckqerbv73j4vk" path="res://Levels/chapter_screen.gd" id="1_xct20"]
 [ext_resource type="FontFile" uid="uid://ccw6lj352kd7l" path="res://Art/Pixelify_Sans/static/PixelifySans-Bold.ttf" id="2_xct20"]
+[ext_resource type="AudioStream" uid="uid://bactrwj7ecr0r" path="res://Music/keyboard.mp3" id="4_ae4bj"]
 
 [node name="ChapterScreen" type="Node2D"]
 script = ExtResource("1_xct20")
@@ -48,3 +49,7 @@ theme_override_fonts/font = ExtResource("2_xct20")
 theme_override_font_sizes/font_size = 9
 text = "[E] Pokračovat"
 horizontal_alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_ae4bj")
+autoplay = true

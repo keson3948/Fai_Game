@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://nexqanv3lpor"]
+[gd_scene load_steps=6 format=3 uid="uid://nexqanv3lpor"]
 
 [ext_resource type="Script" uid="uid://k75e1xvgwvkf" path="res://Levels/main_menu.gd" id="1_3es34"]
 [ext_resource type="Texture2D" uid="uid://prhbnajwt4kq" path="res://Art/image.png" id="1_6ucrw"]
 [ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="2_jy27m"]
+[ext_resource type="AudioStream" uid="uid://cv4ouwin6evgd" path="res://Music/level0.mp3" id="4_8md67"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3es34"]
 bg_color = Color(0.921569, 0.882353, 0.964706, 1)
@@ -48,6 +49,11 @@ theme_override_fonts/font = ExtResource("2_jy27m")
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxFlat_3es34")
 text = "KONEC"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_8md67")
+autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/StartButton" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/QuitButton" to="." method="_on_quit_pressed"]

@@ -6,6 +6,9 @@ extends Node2D
 @onready var e_key_hint = $EKeyHint
 @onready var code_ui = $CodeInputUI
 
+@onready var open_sound = $OpenSound
+@onready var close_sound = $CloseSound
+
 @export var locked: bool = false
 @export var unlock_code: String = "1234"
 @export var quest_text_when_locked := "Zjisti PIN ke kanceláři pana Kováře."
@@ -56,10 +59,12 @@ func _process(_delta):
 func toggle_door():
 	if is_open:
 		sprite.play("close")
+		close_sound.play()
 		is_open = false
 		blocker.disabled = false
 	else:
 		sprite.play("open")
+		open_sound.play()
 		is_open = true
 		blocker.disabled = true
 
@@ -72,7 +77,7 @@ func unlock():
 	if not post_unlock_quest_given and quest_text_after_unlock.strip_edges() != "":
 		post_unlock_quest_given = true
 		await get_tree().process_frame
-		var quest_ui = get_node_or_null("/root/GameLevelTwo/QuestUI")
+		var quest_ui = get_node_or_null("/root/GameLevel/QuestUI")
 		if quest_ui:
 			quest_ui.set_quest(quest_text_after_unlock)
 

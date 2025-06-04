@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bsfuh5da10d73"]
+[gd_scene load_steps=21 format=3 uid="uid://bsfuh5da10d73"]
 
 [ext_resource type="Script" uid="uid://dt2g63dq6h6ah" path="res://Objects/door.gd" id="1_b6hdd"]
 [ext_resource type="Texture2D" uid="uid://bv26n0rvexx52" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/door/frame_4_delay-0.5s.png" id="1_onmhv"]
@@ -14,6 +14,8 @@
 [ext_resource type="FontFile" uid="uid://cbjr4lp55fstj" path="res://Art/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf" id="12_sqfwt"]
 [ext_resource type="Texture2D" uid="uid://ckhfm318fa7u4" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/yes.png" id="13_bfhjj"]
 [ext_resource type="Texture2D" uid="uid://ugbmvbxfowo6" path="res://Art/moderninteriors-win-2/3_Animated_objects/16x16/ no.png" id="14_b1d4q"]
+[ext_resource type="AudioStream" uid="uid://ctndgeapc5l8j" path="res://Music/door_open.mp3" id="15_sqfwt"]
+[ext_resource type="AudioStream" uid="uid://cqgem30bsa7o1" path="res://Music/door_close.mp3" id="16_bfhjj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_sqfwt"]
 animations = [{
@@ -139,6 +141,12 @@ offset_bottom = 71.0
 theme_override_icons/icon = ExtResource("14_b1d4q")
 icon_alignment = 1
 expand_icon = true
+
+[node name="OpenSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_sqfwt")
+
+[node name="CloseSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_bfhjj")
 
 [connection signal="body_entered" from="PlayerDetector" to="." method="_on_body_entered"]
 [connection signal="body_exited" from="PlayerDetector" to="." method="_on_body_exited"]

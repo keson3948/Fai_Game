@@ -1,13 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8s01h0ud2t4t"]
+[gd_scene load_steps=4 format=3 uid="uid://dd4gcsltldbit"]
 
-[ext_resource type="Script" uid="uid://b3w5ovja20vrb" path="res://Objects/pickup_item.gd" id="1_14cko"]
-[ext_resource type="AudioStream" uid="uid://cpunj0kqsumev" path="res://Music/paper-pickup.mp3" id="2_d5vu1"]
+[ext_resource type="Script" uid="uid://b3w5ovja20vrb" path="res://Objects/pickup_item.gd" id="1_2jfce"]
+[ext_resource type="AudioStream" uid="uid://cpunj0kqsumev" path="res://Music/paper-pickup.mp3" id="2_q6lpd"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_d5vu1"]
 radius = 20.0
 
 [node name="PickupItem" type="Area2D"]
-script = ExtResource("1_14cko")
+script = ExtResource("1_2jfce")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
@@ -15,5 +15,5 @@ script = ExtResource("1_14cko")
 shape = SubResource("CircleShape2D_d5vu1")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_d5vu1")
+stream = ExtResource("2_q6lpd")
 volume_db = 18.704

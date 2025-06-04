@@ -1,48 +1,52 @@
-[gd_scene load_steps=58 format=4 uid="uid://cnmsv2mbtk6ni"]
+[gd_scene load_steps=64 format=4 uid="uid://bfhaa8i3wuy7u"]
 
-[ext_resource type="Script" uid="uid://djwhqbmuyskk" path="res://Levels/game_level.gd" id="1_6g0x5"]
-[ext_resource type="PackedScene" uid="uid://du6gfciwwr13e" path="res://Characters/DialogCharacter.tscn" id="1_08jf7"]
-[ext_resource type="PackedScene" uid="uid://bbsf3afdfqybj" path="res://Characters/stana_player.tscn" id="1_up8ek"]
-[ext_resource type="Texture2D" uid="uid://b8s2rrp8kwr7x" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Room_Builder_16x16.png" id="2_3ty5n"]
-[ext_resource type="Texture2D" uid="uid://bl1vd48bfd5ry" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/48x48/Interiors_free_48x48.png" id="3_3ty5n"]
-[ext_resource type="Texture2D" uid="uid://chvnvgnos0b74" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Room_Builder_subfiles/Room_Builder_Floors_16x16.png" id="3_nxa8a"]
-[ext_resource type="Texture2D" uid="uid://cbee7qvsxhnck" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/48x48/Room_Builder_free_48x48.png" id="4_nxa8a"]
-[ext_resource type="Texture2D" uid="uid://ci4p704rxkuyh" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/16x16/Interiors_free_16x16.png" id="5_bskef"]
-[ext_resource type="Texture2D" uid="uid://cseipagdumawo" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="5_ese5x"]
-[ext_resource type="Texture2D" uid="uid://bbmsyojbps7mn" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/16x16/Room_Builder_free_16x16.png" id="6_ds5vk"]
-[ext_resource type="Texture2D" uid="uid://cfly6a6pvto8m" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter_Black_Shadow/22_Museum_Black_Shadow_16x16.png" id="8_bskef"]
-[ext_resource type="Texture2D" uid="uid://pwikg73rgts" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/3_Bathroom_16x16.png" id="8_ds5vk"]
-[ext_resource type="Texture2D" uid="uid://dc2vkgfeo5h7b" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter_Black_Shadow/26_Condominium_Black_Shadow_16x16.png" id="10_ds5vk"]
-[ext_resource type="PackedScene" uid="uid://cdjtt8bi60slt" path="res://Objects/sloup.tscn" id="11_nxa8a"]
-[ext_resource type="Texture2D" uid="uid://c8p4cw8gavf6w" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/5_Classroom_and_library_16x16.png" id="12_jw0rm"]
-[ext_resource type="Texture2D" uid="uid://bpueb0mg7tqq6" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/19_Hospital_16x16.png" id="13_ah7re"]
-[ext_resource type="PackedScene" uid="uid://ci2qknn4r32xs" path="res://Objects/vytryna.tscn" id="13_ds5vk"]
-[ext_resource type="Texture2D" uid="uid://bpqpa0hoxy7bc" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/2_LivingRoom_16x16.png" id="14_6tkkn"]
-[ext_resource type="PackedScene" uid="uid://bnnkt41c2776l" path="res://Objects/palma.tscn" id="14_um5wi"]
-[ext_resource type="Texture2D" uid="uid://tvm11rmvsl04" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="15_ah7re"]
-[ext_resource type="PackedScene" uid="uid://d2rurpuwlcty0" path="res://Dialog/dialog_ui.tscn" id="20_c4qsu"]
-[ext_resource type="PackedScene" uid="uid://uxsya2r13lyx" path="res://Objects/quest_ui.tscn" id="21_ip45k"]
-[ext_resource type="PackedScene" uid="uid://bsfuh5da10d73" path="res://Objects/door.tscn" id="22_weyxf"]
-[ext_resource type="PackedScene" uid="uid://bmchwo100wa2b" path="res://Characters/npc.tscn" id="23_eolva"]
-[ext_resource type="Texture2D" uid="uid://1lq0oodsr6xh" path="res://Art/Characters/postavy/danca.png" id="24_hqfmj"]
-[ext_resource type="Texture2D" uid="uid://blieabls2r0dj" path="res://Art/Characters/postavy/domca.png" id="24_ryncs"]
-[ext_resource type="Texture2D" uid="uid://b1jx0qu2bgcri" path="res://Art/Characters/postavy/david.png" id="25_hbjjb"]
-[ext_resource type="PackedScene" uid="uid://dt0rac6y08qp" path="res://Objects/painting.tscn" id="26_oxgbx"]
-[ext_resource type="Texture2D" uid="uid://by4j87hyjxfcg" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/22_Museum.png" id="27_52on2"]
-[ext_resource type="Texture2D" uid="uid://dmtnxsfaymqqh" path="res://Art/obraz.png" id="28_ryncs"]
-[ext_resource type="PackedScene" uid="uid://b8s01h0ud2t4t" path="res://Objects/PickupItem.tscn" id="29_6g0x5"]
-[ext_resource type="Texture2D" uid="uid://dmas63njtyfq7" path="res://Art/Characters/postavy/kacka.png" id="31_6g0x5"]
-[ext_resource type="Texture2D" uid="uid://domakppsd0mup" path="res://Art/Characters/postavy/keson.png" id="32_74bia"]
-[ext_resource type="Texture2D" uid="uid://d4b4umcf0fxsk" path="res://Art/Characters/postavy/leon.png" id="33_q6b1h"]
-[ext_resource type="Texture2D" uid="uid://di3j8dmktadfp" path="res://Art/Characters/postavy/misa.png" id="34_w317m"]
-[ext_resource type="Texture2D" uid="uid://cukpjs4itvb5" path="res://Art/Characters/postavy/sergei.png" id="35_1rhoy"]
-[ext_resource type="Texture2D" uid="uid://d3wt44re7u6ra" path="res://Art/Characters/postavy/spahnel.png" id="36_ljk2o"]
-[ext_resource type="Texture2D" uid="uid://cexjyub18diye" path="res://Art/Characters/postavy/yuliya.png" id="38_jbh3w"]
-[ext_resource type="PackedScene" uid="uid://de2snhos2ihbx" path="res://Objects/door_flip.tscn" id="39_6g0x5"]
-[ext_resource type="AudioStream" uid="uid://bi6ixof4mw1ok" path="res://Music/level1.mp3" id="40_74bia"]
+[ext_resource type="Script" uid="uid://djwhqbmuyskk" path="res://Levels/game_level.gd" id="1_i8kj4"]
+[ext_resource type="PackedScene" uid="uid://du6gfciwwr13e" path="res://Characters/DialogCharacter.tscn" id="2_8ecg4"]
+[ext_resource type="PackedScene" uid="uid://bbsf3afdfqybj" path="res://Characters/stana_player.tscn" id="3_mwgfn"]
+[ext_resource type="Texture2D" uid="uid://b8s2rrp8kwr7x" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Room_Builder_16x16.png" id="4_nt544"]
+[ext_resource type="Texture2D" uid="uid://chvnvgnos0b74" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Room_Builder_subfiles/Room_Builder_Floors_16x16.png" id="5_kuq4g"]
+[ext_resource type="Texture2D" uid="uid://bl1vd48bfd5ry" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/48x48/Interiors_free_48x48.png" id="6_xfepi"]
+[ext_resource type="Texture2D" uid="uid://cbee7qvsxhnck" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/48x48/Room_Builder_free_48x48.png" id="7_ub67m"]
+[ext_resource type="Texture2D" uid="uid://ci4p704rxkuyh" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/16x16/Interiors_free_16x16.png" id="8_n82bg"]
+[ext_resource type="Texture2D" uid="uid://bbmsyojbps7mn" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Interiors_free/16x16/Room_Builder_free_16x16.png" id="9_h4c4h"]
+[ext_resource type="Texture2D" uid="uid://pwikg73rgts" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/3_Bathroom_16x16.png" id="10_ejhgu"]
+[ext_resource type="Texture2D" uid="uid://cfly6a6pvto8m" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter_Black_Shadow/22_Museum_Black_Shadow_16x16.png" id="11_v2d83"]
+[ext_resource type="Texture2D" uid="uid://cseipagdumawo" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="12_maujd"]
+[ext_resource type="Texture2D" uid="uid://dc2vkgfeo5h7b" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter_Black_Shadow/26_Condominium_Black_Shadow_16x16.png" id="13_miquh"]
+[ext_resource type="Texture2D" uid="uid://c8p4cw8gavf6w" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/5_Classroom_and_library_16x16.png" id="14_4khct"]
+[ext_resource type="Texture2D" uid="uid://bpueb0mg7tqq6" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/19_Hospital_16x16.png" id="15_1oprg"]
+[ext_resource type="Texture2D" uid="uid://bpqpa0hoxy7bc" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/2_LivingRoom_16x16.png" id="16_b3lu7"]
+[ext_resource type="Texture2D" uid="uid://tvm11rmvsl04" path="res://Art/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="17_iens4"]
+[ext_resource type="PackedScene" uid="uid://cdjtt8bi60slt" path="res://Objects/sloup.tscn" id="18_hlsqj"]
+[ext_resource type="PackedScene" uid="uid://ci2qknn4r32xs" path="res://Objects/vytryna.tscn" id="19_4jgn8"]
+[ext_resource type="PackedScene" uid="uid://bnnkt41c2776l" path="res://Objects/palma.tscn" id="20_xpyhp"]
+[ext_resource type="PackedScene" uid="uid://d2rurpuwlcty0" path="res://Dialog/dialog_ui.tscn" id="21_eole8"]
+[ext_resource type="PackedScene" uid="uid://uxsya2r13lyx" path="res://Objects/quest_ui.tscn" id="22_8jphi"]
+[ext_resource type="PackedScene" uid="uid://bsfuh5da10d73" path="res://Objects/door.tscn" id="23_awt3h"]
+[ext_resource type="PackedScene" uid="uid://bmchwo100wa2b" path="res://Characters/npc.tscn" id="24_lg2kt"]
+[ext_resource type="Texture2D" uid="uid://blieabls2r0dj" path="res://Art/Characters/postavy/domca.png" id="25_d3q5o"]
+[ext_resource type="Texture2D" uid="uid://1lq0oodsr6xh" path="res://Art/Characters/postavy/danca.png" id="26_6cowa"]
+[ext_resource type="PackedScene" uid="uid://b8s01h0ud2t4t" path="res://Objects/PickupItem.tscn" id="27_mnsk2"]
+[ext_resource type="PackedScene" uid="uid://dt0rac6y08qp" path="res://Objects/painting.tscn" id="28_t73lo"]
+[ext_resource type="Texture2D" uid="uid://by4j87hyjxfcg" path="res://Art/moderninteriors-win-2/1_Interiors/16x16/Theme_Sorter/22_Museum.png" id="29_yt47g"]
+[ext_resource type="Texture2D" uid="uid://dmtnxsfaymqqh" path="res://Art/obraz.png" id="30_30eba"]
+[ext_resource type="Texture2D" uid="uid://b1jx0qu2bgcri" path="res://Art/Characters/postavy/david.png" id="31_cboie"]
+[ext_resource type="Texture2D" uid="uid://dmas63njtyfq7" path="res://Art/Characters/postavy/kacka.png" id="32_1o2lx"]
+[ext_resource type="Texture2D" uid="uid://domakppsd0mup" path="res://Art/Characters/postavy/keson.png" id="33_afal1"]
+[ext_resource type="Texture2D" uid="uid://d4b4umcf0fxsk" path="res://Art/Characters/postavy/leon.png" id="34_53l6e"]
+[ext_resource type="Texture2D" uid="uid://di3j8dmktadfp" path="res://Art/Characters/postavy/misa.png" id="35_ihr7y"]
+[ext_resource type="Texture2D" uid="uid://cukpjs4itvb5" path="res://Art/Characters/postavy/sergei.png" id="36_08u7k"]
+[ext_resource type="Texture2D" uid="uid://d3wt44re7u6ra" path="res://Art/Characters/postavy/spahnel.png" id="37_5py3q"]
+[ext_resource type="Texture2D" uid="uid://cexjyub18diye" path="res://Art/Characters/postavy/yuliya.png" id="38_fk4cd"]
+[ext_resource type="PackedScene" uid="uid://de2snhos2ihbx" path="res://Objects/door_flip.tscn" id="39_qk24r"]
+[ext_resource type="AudioStream" uid="uid://bi6ixof4mw1ok" path="res://Music/level1.mp3" id="40_uwqc5"]
+[ext_resource type="PackedScene" uid="uid://dd4gcsltldbit" path="res://Objects/Smetak.tscn" id="41_8ecg4"]
+[ext_resource type="PackedScene" uid="uid://cj3rgj13lt7tm" path="res://Objects/Listi.tscn" id="42_mwgfn"]
+[ext_resource type="Texture2D" uid="uid://ccxbah8m66i13" path="res://Art/broom.png" id="42_nt544"]
+[ext_resource type="Texture2D" uid="uid://bjt3e6yxs70at" path="res://Art/leaves.png" id="44_kuq4g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_alay0"]
-texture = ExtResource("2_3ty5n")
+texture = ExtResource("4_nt544")
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -4116,7 +4120,7 @@ texture = ExtResource("2_3ty5n")
 67:112/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2lq5e"]
-texture = ExtResource("3_nxa8a")
+texture = ExtResource("5_kuq4g")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
@@ -4551,7 +4555,7 @@ texture = ExtResource("3_nxa8a")
 14:37/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ooie"]
-texture = ExtResource("3_3ty5n")
+texture = ExtResource("6_xfepi")
 3:2/0 = 0
 4:2/0 = 0
 5:2/0 = 0
@@ -12181,7 +12185,7 @@ texture = ExtResource("3_3ty5n")
 47:265/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jw0rm"]
-texture = ExtResource("4_nxa8a")
+texture = ExtResource("7_ub67m")
 16:0/0 = 0
 17:0/0 = 0
 18:0/0 = 0
@@ -14245,7 +14249,7 @@ texture = ExtResource("4_nxa8a")
 29:62/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ah7re"]
-texture = ExtResource("5_bskef")
+texture = ExtResource("8_n82bg")
 1:0/0 = 0
 2:0/0 = 0
 4:0/0 = 0
@@ -15369,7 +15373,7 @@ texture = ExtResource("5_bskef")
 15:88/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6tkkn"]
-texture = ExtResource("6_ds5vk")
+texture = ExtResource("9_h4c4h")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -15615,7 +15619,7 @@ texture = ExtResource("6_ds5vk")
 9:20/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fct0e"]
-texture = ExtResource("8_ds5vk")
+texture = ExtResource("10_ejhgu")
 3:0/0 = 0
 4:0/0 = 0
 5:0/0 = 0
@@ -16370,7 +16374,7 @@ texture = ExtResource("8_ds5vk")
 6:54/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_55elf"]
-texture = ExtResource("8_bskef")
+texture = ExtResource("11_v2d83")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -18133,14 +18137,14 @@ texture = ExtResource("8_bskef")
 12:121/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_um5wi"]
-texture = ExtResource("5_ese5x")
+texture = ExtResource("12_maujd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 3:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sf1a6"]
-texture = ExtResource("10_ds5vk")
+texture = ExtResource("13_miquh")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -18411,7 +18415,7 @@ texture = ExtResource("10_ds5vk")
 15:18/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pl1jo"]
-texture = ExtResource("12_jw0rm")
+texture = ExtResource("14_4khct")
 0:0/0 = 0
 8:0/0 = 0
 8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(8, -8, 8, 8, -4.40204, 8, -8, 8, -8, -8)
@@ -18948,7 +18952,7 @@ texture = ExtResource("12_jw0rm")
 15:33/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 4.40204, 8, 4.04196, -8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sh88w"]
-texture = ExtResource("13_ah7re")
+texture = ExtResource("15_1oprg")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -20527,7 +20531,7 @@ texture = ExtResource("13_ah7re")
 6:106/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wri67"]
-texture = ExtResource("14_6tkkn")
+texture = ExtResource("16_b3lu7")
 2:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
@@ -21112,7 +21116,7 @@ texture = ExtResource("14_6tkkn")
 15:44/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0eo6c"]
-texture = ExtResource("15_ah7re")
+texture = ExtResource("17_iens4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -21203,32 +21207,41 @@ sources/8 = SubResource("TileSetAtlasSource_wri67")
 sources/9 = SubResource("TileSetAtlasSource_0eo6c")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6b1h"]
-atlas = ExtResource("12_jw0rm")
+atlas = ExtResource("14_4khct")
 region = Rect2(144, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_74bia"]
-atlas = ExtResource("27_52on2")
+atlas = ExtResource("29_yt47g")
 region = Rect2(112, 400, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwgfn"]
+atlas = ExtResource("42_nt544")
+region = Rect2(-5.57233, -3.51541, 44.8176, 39.3686)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nt544"]
+atlas = ExtResource("44_kuq4g")
+region = Rect2(0.107582, 0.0139399, 28.1564, 17.9969)
 
 [node name="GameLevel" type="Node2D"]
 y_sort_enabled = true
-script = ExtResource("1_6g0x5")
+script = ExtResource("1_i8kj4")
 
-[node name="KovarNPC" parent="." instance=ExtResource("1_08jf7")]
+[node name="KovarNPC" parent="." instance=ExtResource("2_8ecg4")]
 y_sort_enabled = true
 position = Vector2(343, 70)
 scale = Vector2(0.5, 0.5)
-dialog_stages = [["Zdravím tě, Staňo! Mám tu menší prosbu.", "Potřebuju si vyzvednout jeden spis z mé kanceláře.", "Je to složka k diplomové práci z roku 1998… Víš, takové ty staré časy.", "Sám si pro ni dojdu, říkáš?", "Ehm, no… mám tu zrovna telekonferenci. Pomohl bys mi?"], ["Už jsi zpátky? Našel jsi, co jsem chtěl?", "Aha! Zapomněl jsem ti říct PIN ke dveřím!", "Jen, nemůžu si teď vzpomenout...", "PIN je rok založení fakulty.", "Podívej se po fakultě a najdi obraz s rokem založení."], ["Díky! Tak ať ti to dnes dobře dopadne."]]
-quest_text_stages = ["Najdi kancelář pana Kováře", "Zjisti PIN ke dveřím kanceláře", "Úkol splněn"]
+dialog_stages = [["Hele, díky za tu diplomku.", "Ale máme další problém...", "Po strašidelné fakultě zůstala hromada bordelu.", "Najdi někde smeták a trochu to tady pokliď, prosím tě.", "Nejsem tady správce, ale někdo to udělat musí!"], ["Už jsi zpátky? Našel jsi, co jsem chtěl?", "Aha! Zapomněl jsem si říct PIN!", "Jen, nemůžu si teď vzpomenout...", "PIN je rok založení fakulty.", "Podívej se po fakultě a najdi obraz s rokem založením."], ["Opravdu jsi posbíral vše?"], ["Úkol splněn"]]
+quest_text_stages = ["Najdi smeták k úklidu fakulty.", "Úkol splněn", "Opravdu jsi posbíral vše?", "Úkol splněn"]
 chapter_transition_stages = {
-"2": {
-"next_scene": "res://Levels/game_level_three.tscn",
-"subtitle": "Po každé párty přichází realita… a smeták.",
-"title": "Kapitola II - Úklidová Odveta"
+"3": {
+"new_scene": "res://Levels/main_menu.tscn",
+"next_scene": "res://Levels/main_menu.tscn",
+"subtitle": "a fakulty je konec",
+"title": "Zazvonil zvonec"
 }
 }
 
-[node name="StanaPlayer" parent="." instance=ExtResource("1_up8ek")]
+[node name="StanaPlayer" parent="." instance=ExtResource("3_mwgfn")]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(485, 118)
@@ -21293,158 +21306,215 @@ scale = Vector2(0.5, 0.5)
 zoom = Vector2(1.5, 1.5)
 position_smoothing_enabled = true
 
-[node name="Sloup2" parent="." instance=ExtResource("11_nxa8a")]
+[node name="Sloup2" parent="." instance=ExtResource("18_hlsqj")]
 y_sort_enabled = true
 position = Vector2(86, 160)
 
-[node name="Sloup3" parent="." instance=ExtResource("11_nxa8a")]
+[node name="Sloup3" parent="." instance=ExtResource("18_hlsqj")]
 y_sort_enabled = true
 position = Vector2(87, 48)
 
-[node name="Sloup" parent="." instance=ExtResource("11_nxa8a")]
+[node name="Sloup" parent="." instance=ExtResource("18_hlsqj")]
 y_sort_enabled = true
 position = Vector2(250, 160)
 
-[node name="Palma" parent="." instance=ExtResource("13_ds5vk")]
+[node name="Palma" parent="." instance=ExtResource("19_4jgn8")]
 position = Vector2(-195, 453)
 
-[node name="Palma2" parent="." instance=ExtResource("13_ds5vk")]
+[node name="Palma2" parent="." instance=ExtResource("19_4jgn8")]
 position = Vector2(-195, 520)
 
-[node name="Palma3" parent="." instance=ExtResource("13_ds5vk")]
+[node name="Palma3" parent="." instance=ExtResource("19_4jgn8")]
 position = Vector2(-195, 587)
 
-[node name="Palma4" parent="." instance=ExtResource("14_um5wi")]
+[node name="Palma4" parent="." instance=ExtResource("20_xpyhp")]
 position = Vector2(313, 108)
 
-[node name="Palma5" parent="." instance=ExtResource("14_um5wi")]
+[node name="Palma5" parent="." instance=ExtResource("20_xpyhp")]
 position = Vector2(285, 89)
 
-[node name="Palma6" parent="." instance=ExtResource("14_um5wi")]
+[node name="Palma6" parent="." instance=ExtResource("20_xpyhp")]
 position = Vector2(345, 120)
 
-[node name="DialogUI" parent="." instance=ExtResource("20_c4qsu")]
+[node name="DialogUI" parent="." instance=ExtResource("21_eole8")]
 
-[node name="QuestUI" parent="." instance=ExtResource("21_ip45k")]
+[node name="QuestUI" parent="." instance=ExtResource("22_8jphi")]
 
-[node name="Door" parent="." instance=ExtResource("22_weyxf")]
+[node name="Door" parent="." instance=ExtResource("23_awt3h")]
 position = Vector2(-11, 917)
 locked = true
 unlock_code = "2006"
 quest_text_when_locked = "Zeptej se pana Kováře na PIN."
 quest_text_after_unlock = "Vem Diplomku"
 
-[node name="Door2" parent="." instance=ExtResource("22_weyxf")]
+[node name="Door2" parent="." instance=ExtResource("23_awt3h")]
 position = Vector2(102, 917)
 quest_text_when_locked = "Zeptej se pana Kováře na PIN."
 quest_text_after_unlock = "Vem Diplomku"
 
-[node name="Door3" parent="." instance=ExtResource("22_weyxf")]
+[node name="Door3" parent="." instance=ExtResource("23_awt3h")]
 position = Vector2(230, 917)
 unlock_code = ""
 quest_text_when_locked = "Zeptej se pana Kováře na PIN."
 quest_text_after_unlock = "Vem Diplomku"
 
-[node name="Door14" parent="." instance=ExtResource("22_weyxf")]
+[node name="Door14" parent="." instance=ExtResource("23_awt3h")]
 position = Vector2(373, -11)
 unlock_code = ""
 quest_text_when_locked = "Zeptej se pana Kováře na PIN."
 quest_text_after_unlock = "Vem Diplomku"
 
-[node name="NPC" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(48, 114)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("24_ryncs")
+npc_texture = ExtResource("25_d3q5o")
 
-[node name="NPC2" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC2" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(-57, 89)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("24_hqfmj")
+npc_texture = ExtResource("26_6cowa")
 
-[node name="PickupItem" parent="." instance=ExtResource("29_6g0x5")]
+[node name="PickupItem" parent="." instance=ExtResource("27_mnsk2")]
 position = Vector2(-53, 783)
 preview_texture = SubResource("AtlasTexture_q6b1h")
 
-[node name="Painting" parent="." instance=ExtResource("26_oxgbx")]
+[node name="Painting" parent="." instance=ExtResource("28_t73lo")]
 z_index = -800
 y_sort_enabled = true
 position = Vector2(425, 515)
 scale = Vector2(0.8, 0.8)
 preview_texture = SubResource("AtlasTexture_74bia")
-full_image_texture = ExtResource("28_ryncs")
+full_image_texture = ExtResource("30_30eba")
 
-[node name="NPC3" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC3" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(21, 34)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("25_hbjjb")
+npc_texture = ExtResource("31_cboie")
 
-[node name="NPC4" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC4" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(-217, 654)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("31_6g0x5")
+npc_texture = ExtResource("32_1o2lx")
 
-[node name="NPC5" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC5" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(497, 574)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("32_74bia")
+npc_texture = ExtResource("33_afal1")
 
-[node name="NPC6" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC6" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(447, 167)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("33_q6b1h")
+npc_texture = ExtResource("34_53l6e")
 
-[node name="NPC7" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC7" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(-389, 405)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("34_w317m")
+npc_texture = ExtResource("35_ihr7y")
 
-[node name="NPC8" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC8" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(-206, -62)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("35_1rhoy")
+npc_texture = ExtResource("36_08u7k")
 
-[node name="NPC9" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC9" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(74, -56)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("36_ljk2o")
+npc_texture = ExtResource("37_5py3q")
 
-[node name="NPC11" parent="." instance=ExtResource("23_eolva")]
+[node name="NPC11" parent="." instance=ExtResource("24_lg2kt")]
 position = Vector2(-217, 956)
 scale = Vector2(0.5, 0.5)
-npc_texture = ExtResource("38_jbh3w")
+npc_texture = ExtResource("38_fk4cd")
 
-[node name="Door4" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door4" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(-253, 872)
 
-[node name="Door5" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door5" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(-252, 760)
 
-[node name="Door6" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door6" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(-252, 584)
 
-[node name="Door7" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door7" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(-253, 360)
 
-[node name="Door11" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door11" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(-253, 167)
 
-[node name="Door12" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door12" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(-254, -88)
 
-[node name="Door13" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door13" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(130, -72)
 
-[node name="Door8" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door8" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(467, 839)
 
-[node name="Door9" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door9" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(467, 583)
 
-[node name="Door10" parent="." instance=ExtResource("39_6g0x5")]
+[node name="Door10" parent="." instance=ExtResource("39_qk24r")]
 position = Vector2(467, 359)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("40_74bia")
+stream = ExtResource("40_uwqc5")
 volume_db = -20.0
 autoplay = true
 parameters/looping = true
+
+[node name="PickupItem2" parent="." instance=ExtResource("41_8ecg4")]
+position = Vector2(298, 878)
+item_id = "smetak"
+pickup_text = "Sebráno: Smeták"
+preview_texture = SubResource("AtlasTexture_mwgfn")
+quest_text_after_pickup = "Posbírej listí na fakultě"
+
+[node name="Listi" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(416, 105)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi2" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(435, 61)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi3" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(-47, 33)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi4" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(-138, 244)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi5" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(-167, 186)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi6" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(-167, 186)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi7" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(50, 187)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi8" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(284, 15)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi9" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(-41, 217)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
+
+[node name="Listi10" parent="." instance=ExtResource("42_mwgfn")]
+position = Vector2(-162, 79)
+pickup_text = "Sebráno: Listi"
+preview_texture = SubResource("AtlasTexture_nt544")
